@@ -5,8 +5,8 @@ spring:
     password: root
     driver-class-name: oracle.jdbc.OracleDriver
   jpa:
-    show_sql: true
-    format_sql: true
+    show-sql: true
+    #format_sql: true
     hibernate:
       ddl-auto: update
       naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
