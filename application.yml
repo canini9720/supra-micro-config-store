@@ -8,11 +8,11 @@ spring:
     show-sql: true
     #format_sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
       naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
     properties:
       hibernate:
         dialect: org.hibernate.dialect.Oracle10gDialect
         hbm2ddl:
-          auto: update  
+          auto: none  
 
