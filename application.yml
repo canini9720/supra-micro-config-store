@@ -5,11 +5,13 @@ spring:
     password: root
     driver-class-name: oracle.jdbc.OracleDriver
   jpa:
-    show-sql: true
-    #format_sql: true
+    show_sql: true
+    format_sql: true
     hibernate:
       ddl-auto: none
-      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      #naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       hibernate:
         dialect: org.hibernate.dialect.Oracle10gDialect
